@@ -1,0 +1,52 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> Armstrong
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+ <span class="b">int</span> n, sum  <span class="a">=</span> 0, temp, remainder, digits  <span class="a">=</span> 0;
+ 
+       <span class="b">Scanner</span> in = new  <span class="a">Scanner(System</span>.in);
+       <span class="a">System</span>.out.println( <span class="strings">"Input a number to check if it is an Armstrong number"</span>);      
+      n  <span class="a">=</span> in.nextInt();
+ 
+      temp  <span class="a">=</span> n;
+ 
+       <span class="comment">// Count number of digits</span>
+ 
+       <span class="a">while</span> (temp != 0) {
+         digits <span class="a">++</span>;
+         temp  <span class="a">=</span> temp/10;
+      }
+ 
+      temp  <span class="a">=</span> n;
+ 
+       <span class="a">while</span> (temp != 0) {
+         remainder  <span class="a">=</span> temp%10;
+         sum  <span class="a">=</span> sum  <span class="a">+</span> power(remainder, digits);
+         temp  <span class="a">=</span> temp/10;
+      }
+ 
+       <span class="a">if</span> (n == sum)
+          <span class="a">System</span>.out.println(n  <span class="a">+</span>  <span class="strings">" is an Armstrong number."</span>);
+       <span class="a">else</span>
+          <span class="a">System</span>.out.println(n  <span class="a">+</span>  <span class="strings">" is not an Armstrong number."</span>);         
+   }
+ 
+    <span class="a">static</span>  <span class="b">int</span> power( <span class="b">int</span> n,  <span class="b">int</span> r) {
+       <span class="b">int</span> c, p  <span class="a">=</span> 1;
+ 
+       <span class="a">for</span> (c  <span class="a">=</span> 1; c <= r; c<span class="a">++</span>) 
+         p  <span class="a">=</span> p*n;
+ 
+      return p;   
+   }
+}
+</pre>
+</body>
+</html>

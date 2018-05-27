@@ -1,0 +1,35 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> CountTheDigitInNumber
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+	<span class="b">int</span> no,a<span class="a">=</span>0;
+	<span class="b">Scanner</span> s=new <span class="b">Scanner(System</span>.in);
+	<span class="a">System</span>.out.println(<span class="strings">"Enter any number : "</span>);
+	no <span class="a">=</span> s.nextInt();
+
+	<span class="a">if</span>(no<0)
+	{
+		no<span class="a">=</span>no * -1;
+	}
+		<span class="a">else if</span>(no==0)
+	{
+		no<span class="a">=</span>1;
+	}
+	<span class="a">while</span>(no>0)
+	{
+		no<span class="a">=</span>no/10;
+	a<span class="a">++</span>;
+	}
+	<span class="a">System</span>.out.println(<span class="strings">"Number of Digits in given number is: "</span><span class="a">+</span>a);
+	}
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jamesrussel.javamadeeasy.ReferencesFragment"
+    >
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Java Programming Tutorials"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+                    <TextView
+                        android:id="@+id/test_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/test_string"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Introduction to Java Programming"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+                    <TextView
+                        android:id="@+id/test_text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/test_string1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorText"
+                        android:paddingBottom="10dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Java Basics"
+                        android:textSize="16sp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+                    <TextView
+                        android:id="@+id/test_text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ref1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="[Cengage] - Java Programming, 6th ed - 2011 - [Farrell]"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/colorAccent"
+                        />
+                    <TextView
+                        android:id="@+id/test_text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ref2"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Java Programming Tutorials For Beginners By ProgrammingKnowledge "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginRight="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/test_text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ref3"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorText"
+                        android:paddingBottom="10dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

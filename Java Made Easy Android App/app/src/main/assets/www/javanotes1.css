@@ -1,0 +1,31 @@
+body {
+   margin: %5$fpx %5$fpx %5$fpx %5$fpx;
+   font-size: %4$fpx;
+   line-height: 1.3;
+   font-family: sans-serif;
+    padding:5px;
+	color: #%2$s;
+}
+*
+{
+	margin: 5 auto 5 auto;
+	text-align:left;
+ }
+  h3{
+                        padding: 5px;
+                        text-align: center;
+                        background-color: #e9e9e9;
+                        border: 1px solid #ddd;
+                        font-size: 19px;
+                        font-size: 1em;
+                        min-height: 1.1em;
+						color:#FF4081;
+                    }
+
+                    p{
+                        line-height:1.5;
+						text-align:justify;
+						 padding-left:10px;
+ padding-right:10px;
+                    }
+				

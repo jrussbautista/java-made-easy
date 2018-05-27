@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemTextAppearance">@style/CustomTextColor</item>
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="AppTheme.TransNav" parent="AppTheme" />
+
+    <style name="CustomTitleTextAppearance">
+    <item name="android:textSize">23sp</item>
+    <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogAnimation_2">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+
+    <style name="CustomTextColor" parent="@android:style/TextAppearance" >
+        <item name="android:color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:popupBackground">#234</item>
+    </style>
+
+
+    <style name="TextViewAppearance.Headline2" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoLight</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/global_color_primary_light</item>
+    </style>
+
+    <style name="TextViewAppearance" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="typeface">robotoRegular</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:paddingRight">26dp</item>
+        <!-- Supports API Level 17+ -->
+        <!-- <item name="android:paddingStart">26dp</item> -->
+        <!-- Supports API Level 17+ -->
+        <!-- <item name="android:paddingEnd">26dp</item> -->
+    </style>
+
+
+    <style name="expandedappbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="collapsedappbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="MyTabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabStyle</item>
+        <item name="tabSelectedTextColor">#ff0000</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Operator precedence in Java (SITS Educators)</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<style type="text/css">
+/*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+DIV,UL,OL /* Left */
+{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+</style>
+
+</head>
+<body>
+<div id="table1" style="position:absolute; overflow:hidden; left:0px; top:3px; width:478px; height:853px; z-index:0">
+<div class="wpmd">
+<div><TABLE bgcolor="#333333" border=1 bordercolorlight="#C0C0C0" bordercolordark="#808080">
+<TR valign=top>
+<TD width=74><div class="wpmd">
+<div align=center><font color="#FFFFFF" class="ws12">Operator</font></div>
+</div>
+</TD>
+<TD width=211><div class="wpmd">
+<div align=center><font color="#FFFFFF" class="ws12">Meaning of operator</font></div>
+</div>
+</TD>
+<TD width=101><div class="wpmd">
+<div align=center><font color="#FFFFFF" class="ws12">Associativity</font></div>
+</div>
+</TD>
+<TD width=60><div class="wpmd">
+<div align=center><font color="#FFFFFF" class="ws12">Rank</font></div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B>()</B></div>
+<div align=center><B>[]</B></div>
+<div align=center><B>.</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Functional call&nbsp; (Parentheses)</div>
+<div align=center>Array element reference</div>
+<div align=center>Member selection</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>1</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center><B>!</B></div>
+<div align=center><B> ~</B></div>
+<div align=center><B> +</B></div>
+<div align=center><B> -</B></div>
+<div align=center><B>++</B></div>
+<div align=center><B>--</B></div>
+<div align=center><B>(type)</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Logical negation</div>
+<div align=center>Bitwise(1 's) complement</div>
+<div align=center>Unary plus</div>
+<div align=center>Unary minus</div>
+<div align=center>Increment</div>
+<div align=center>Decrement</div>
+<div align=center>Type cast(conversion)</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Right to left</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>2</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B> *</B></div>
+<div align=center><B> /</B></div>
+<div align=center><B> %</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Multiply</div>
+<div align=center>Divide</div>
+<div align=center>Remainder(modulo-division)</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>3</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center><B> +</B></div>
+<div align=center><B> -</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Binary plus(addition)</div>
+<div align=center>Binary minus(subtraction)</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>4</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B>&lt;&lt;</B></div>
+<div align=center><B>&gt;&gt;</B></div>
+<div align=center><B>&gt;&gt;&gt;</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left shift</div>
+<div align=center>Right shift</div>
+<div align=center>Bitwise Right shift with 0 fill</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>5</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center><B>&lt;</B></div>
+<div align=center><B>&lt;=</B></div>
+<div align=center><B>&gt;</B></div>
+<div align=center><B>&gt;=</B></div>
+<div align=center><B>instanceof</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Less than</div>
+<div align=center>Less than or equal</div>
+<div align=center>Greater than</div>
+<div align=center>Greater than or equal</div>
+<div align=center>Type comparison (objects)</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>6</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B>==</B></div>
+<div align=center><B>!=</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Equal to</div>
+<div align=center>Not equal to</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>7</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center><B>&amp;</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Bitwise AND</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>8</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B>^</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Bitwise exclusive OR</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>9</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center><B>|</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Bitwise OR</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>10</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B>&amp;&amp;</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Logical AND</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>11</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center><B>||</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Logical OR</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>12</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B>?:</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Conditional Operator</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>13</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center><B>=</B></div>
+<div align=center><B>*=</B></div>
+<div align=center><B>/=</B></div>
+<div align=center><B>%=</B></div>
+<div align=center><B>+=</B></div>
+<div align=center><B>-=</B></div>
+<div align=center><B>&amp;=</B></div>
+<div align=center><B>^=</B></div>
+<div align=center><B>|=</B></div>
+<div align=center><B>&lt;&lt;=</B></div>
+<div align=center><B>&gt;&gt;=</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Assignment Operator</div>
+<div align=center>Short-Hand Assignment</div>
+<div align=center>Operators</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>Right to left</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#FFFFFF"><div class="wpmd">
+<div align=center>14</div>
+</div>
+</TD>
+</TR>
+<TR valign=top>
+<TD width=74 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center><B>,</B></div>
+</div>
+</TD>
+<TD width=211 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>comma(separator)</div>
+</div>
+</TD>
+<TD width=101 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>Left to right</div>
+</div>
+</TD>
+<TD width=60 bgcolor="#C0C0C0"><div class="wpmd">
+<div align=center>15</div>
+</div>
+</TD>
+</TR>
+</TABLE>
+</div>
+</div>
+<p align="right"><b><em>
+SITS Educators
+</b></em></p>
+</div>
+
+
+</body>
+</html>

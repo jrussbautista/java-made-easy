@@ -1,0 +1,34 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+
+ <span class="a">class</span> Factorial
+ {
+ <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+   {
+       <span class="b">int</span> n, c, fact <span class="a">=</span> 1;
+ 
+      <span class="b">System.out</span>.println(<span class="strings">"Enter an integer to calculate it's factorial"</span>);
+      <span class="b">Scanner</span> <span class="a">n = new</span> <span class="b">Scanner(System</span>.in);
+ 
+      n<span class="a">=</span> in.nextInt();
+ 
+      <span class="a">if</span> ( n < 0 )
+         <span class="b">System</span>.out.println(<span class="strings">"Number should be non-negative."</span>);
+      <span class="a">else</span>
+      {
+         <span class="a">for</span> ( <span class="variable">c</span> <span class="a">=</span> 1 ; <span class="variable">c</span> <= n; c++ )
+           fact<span class="a">=</span>fact</span>*c;
+ 
+          <span class="b">System</span>.out.println( <span class="strings">"Factorial of 
+		 "</span> <span class="a">+</span>n</span> <span class="a">+</span> <span class="strings">" is = "</span> <span class="a">+</span>fact);
+      }
+   }
+}
+</pre>
+</body>
+</html>

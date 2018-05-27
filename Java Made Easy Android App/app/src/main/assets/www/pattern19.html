@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<pre>
+<span class="a">class</span> Pattern19
+{
+<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	{
+	  <span class="b">int</span> n <span class="a">=</span> 5; <span class="comment">// size</span>
+	  <span class="a">int</span> i;
+	  <span class="a">int</span> j;
+	  
+	  <span class="a">for</span> (i <span class="a">=</span> n - 1; i >= 0; i<span class="a">--</span>) 
+	  {
+		<span class="comment">/*
+	   outer gap loop
+		*/</span>
+	  <span class="a">for</span> (j <span class="a">=</span> n - 1; j > i; j<span class="a">--</span>) 
+	  {
+	    <span class="a">System</span>.out.print(<span class="strings">" "></span>);
+	}
+	    <span class="a">System</span>.out.printf(<span class="strings">"%c"</span>, i + 65); <span class="comment">// 65-ASCII of 'A'
+		/*
+		* inner gap loop
+		*/</span>
+		
+		<span class="a">for</span> (j <span class="a">= </span>1; j < (i * 2); j<span class="a">++</span>) {
+		<span class="a">System</span>.out.print(<span class="strings">" "</span>);
+		}
+		<span class="a">if</span> (i >= 1) 
+		{
+		<span class="a">System</span>.out.printf(<span class="strings">"%c"</span>, i + 65); <span class="comment">// 65-ASCII of 'A'</span>
+		}
+		<span class="a">System</span>.out.print(<span class="strings">"\n"</span>);
+	}
+   }
+}
+</pre>
+</body>
+</html>	

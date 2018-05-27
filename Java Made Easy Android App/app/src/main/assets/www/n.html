@@ -1,0 +1,32 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> ReverseNumber
+{
+   
+    <span class="b">int</span> n, num <span class="a">=</span> 1, c, d;
+<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+ {
+  <span class="b">int</span> n, reverse <span class="a">=</span> 0;
+	
+  <span class="a">System</span>.out.println(<span class="strings">"Enter the number to reverse"</span>);
+  <span class="b">Scanner</span> in <span class="a">=</span> new <span class="b">Scanner(System</span>.in);
+    n <span class="a">=</span> in.nextInt();
+ 
+	<span class="a">while</span<( n != 0 )
+      {
+          reverse <span class="a">=</span> reverse * 10;
+          reverse <span class="a">=</span> reverse <span class="a">+</span> n%10;
+          n <span class="a">=</span> n/10;
+      }
+ 
+      <span class="a">System</span>.out.println(<span class="strings">"Reverse of entered number is "</span><span class="a">+</span>reverse);
+   }
+}
+</pre>
+</body>
+</html>

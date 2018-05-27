@@ -1,0 +1,30 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">public class</span> SwapWithoutUsingThirdVariable {
+ 
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+   {            
+	<span class="b">int</span> num1 <span class="a">=</span> 10;
+    <span class="b">int</span> num2 <span class="a">=</span> 20;
+               
+    <span class="a">System</span>.out.println(<span class="strings">"Before Swapping"</span>);
+    <span class="a">System</span>.out.println(<span class="strings">"Value of num1 is :"</span><span class="a"> +</span> num1);
+    <span class="a">System</span>.out.println(<span class="strings">"Value of num2 is :"</span><span class="a"> + </span> num2);
+               
+ <span class="comment">//add both the numbers and assign it to first</span>
+    num1 <span class="a">=</span> num1 <span class="a">+</span> num2;
+    num2 <span class="a">=</span> num1 <span class="a">-</span> num2;
+    num1 <span class="a">=</span> num1 <span class="a">-</span> num2;
+               
+    <span class="a">System</span>.out.println(<span class="strings">"Before Swapping"</span>);
+    <span class="a">System</span>.out.println(<span class="strings">"Value of num1 is :"</span> <span class="a">+</span> num1);
+    <span class="a">System</span>.out.println(<span class="strings">"Value of num2 is :"</span> <span class="a">+</span> num2);
+  }
+}
+</pre>
+</body>
+</html>

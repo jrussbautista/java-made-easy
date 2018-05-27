@@ -1,0 +1,27 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+    <span class="a">class</span> Fibonacci
+	{  
+    <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {    
+     <span class="b">int</span> n1<span class="a">=</span>0,n2<span class="a">=</span>1,n3,i,count<span class="a">=</span>10;
+	<span class="comment">//printing 0 and 1</span>	 
+     <span class="a">System</span>.out.print(n1+<span class="strings">" "</span><span class="a">+</span>n2);     
+        
+	<span class="comment">//loop starts from 2 because 0 and 1 are already printed </span>   	
+     <span class="a">for</span>(i<span class="a">=</span>2;i < count;<span class="a">++</span>i)
+     {    
+      n3<span class="a">=</span>n1<span class="a">+</span>n2;    
+      <span class="a">System</span>.out.print(<span class="strings">" "</span><span class="a">+</span>n3);    
+      n1<span class="a">=</span>n2;    
+      n2<span class="a">=</span>n3;    
+     }       
+   }
+}  
+</pre>
+</body>
+</html>

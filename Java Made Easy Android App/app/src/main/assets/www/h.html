@@ -1,0 +1,29 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">public class</span> PascalTriangle {
+    
+ <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+   {
+        
+ <span class="b">int</span> rows <span class="b">=</span> 10;
+        
+        
+  <span class="a">for</span>(<span class="b">int</span> i <span class="a">=</span>0;i < rows;i<span class="a">++</span>) {
+  <span class="b">int</span> number <span class="a">=</span> 1;
+  <span class="a">System</span>.out.format(<span class="strings">"%"</span><span class="a">+</span>(rows<span class="a">-</span>i)<span class="a">*</span>2<span class="a">+</span><span class="strings">"s"</span>,<span class="strings">""</span>);
+    
+	<span class="a">for</span>(<span class="b">int</span> j<span class="a">=</span>0;j<=i;j<span class="a">++</span>) {
+	<span class="a">System</span>.out.format(<span class="strings">"%4d"</span>,number);
+	number <span class="a">=</span> number <span class="a">*</span> (i <span class="a">-</span> j) / (j <span class="a">+</span> 1);          
+		}
+	<span class="a">System</span>.out.println();
+    }    
+  }
+}
+</pre>
+</body>
+</html>

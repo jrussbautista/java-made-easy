@@ -1,0 +1,39 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> PerfectNumber
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+   <span class="b">Scanner</span> sl<span class="a">=</span>new <span class="b">Scanner(System></span>.in);
+   <span class="a">System</span>.out.println(<span class="strings">"Enter A Number"</span>);
+   <span class="b">int</span> num<span class="a">=</span>sl.nextInt();
+      
+  <span class="b">int</span> b<span class="a">=</span>1, s<span class="a">=</span>0;
+      
+    <span class="a">while</span>(b<num )
+        {
+     <span class="a">if</span>(num%b <span class="a">==</span> 0)
+       {
+	s <span class="a">+=</span> b;         
+        }
+        b<span class="a">++</span>;
+       }
+      
+        <span class="a">if</span>(s <span class="a">==</span> num)
+        {
+        <span class="a">System</span>.out.println(num<span class="a">+</span><span class="strings">" is a perfect number</span>");
+        }
+       <span class="a">else</span>
+        {
+           <span class="a">System</span>.out.println(num<span class="a">+</span><span class="strings">" is not a perfect number"</span>);
+        }      
+    }
+}
+</pre>
+</body>
+</html>

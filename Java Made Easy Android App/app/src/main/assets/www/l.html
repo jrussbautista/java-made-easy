@@ -1,0 +1,40 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> StrongNumber
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+     <span class="b">StrongNumber</span> ss <span class="a">=</span>new StrongNumber();
+     <span class="b">int</span> a,b,r,s <span class="a">=</span>0;
+     <span class="b">Scanner</span> sl <span class="a">=</span>new  <span class="b">Scanner(System</span>.in);
+     <span class="a">System</span>.out.println( <span class="strings">"Enter A Number"</span>);
+    b <span class="a">=</span>sl. nextInt() ;
+    a <span class="a">=</span>b;
+     <span class="a">while</span>(b>0)
+     {
+      r <span class="a">=</span>b%10;
+      s <span class="a">=</span>s+ss.fact(r);
+      b <span class="a">=</span>b/10;
+    }
+     <span class="a">if</span>(a==s)
+        <span class="a">System</span>.out.println(a<span class="a">+</span> <span class="strings">" is a strong number"</span>);
+        <span class="a">else</span>
+       <span class="a">System</span>.out.println(a<span class="a">+</span><span class="strings">" is not a strong number"</span>);
+     }
+     <span class="b">int</span> fact(<span class="b">int</span> i)
+     {
+      <span class="b">int</span> f,j;
+      f<span class="a">=</span>1;
+      <span class="a">for</span>(j<span class="a">=</span>i ;j>0;j--)
+       f<span class="a">=</span>f*j;
+       return f;
+      }
+}
+</pre>
+</body>
+</html>

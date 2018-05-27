@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<pre>
+<span class="a">class</span> Pattern18
+{
+<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	{
+	 <span class="b">int</span> n <span class="a">=</span> 5; <span class="comment">//size</span>
+	 <span class="b">int</span> i;
+	 <span class="b">int</span> j;
+	  <span class="a">for</span> (i <span class="a">=</span> 0;i < n;i<span class="a">++</span>)
+	  {
+	   <span class="a">for</span> (j <span class="a">=</span> 0;j < n;j<span class="a">++</span>)
+	   {
+	    <span class="a">if</span> (i == j || i + j == n - 1)
+		 {
+		  <span class="a">System</span>.out.print((<span class="b">char</span>)(i + 65));
+		  <span class="a">System</span>.out.print(<span class="strings">" "</span>);
+		 }
+		 <span class="a">else</span>
+		 {
+		 <span class="a">System</span>.out.print(<span class="strings">"  "</span>);
+		}
+	   }
+		<span class="a">System</span>.out.print(<span class="strings">"\n"</span>);
+	  }
+	}
+}
+</pre>
+</body>
+</html>	

@@ -1,0 +1,66 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> SumOfDigits
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+   <span class="b">Scanner</span> in <span class="a">=</span> new <span class="b">Scanner(System</span>.in);
+   <span class="a">int</span> n;
+
+   <span class="a">System</span>.out.print(<span class="strings">"Enter a positive integer: "</span>);
+
+   n <span class="a">=</span> in.nextInt();
+
+   <span class="a">if</span> (n <= 0)
+
+    <span class="a">System</span>.out.println(<span class="strings">"Integer you've entered is nonpositive."</span>);
+
+    <span class="a">else</span> {
+	
+	<span class="b">int</span> sum <span class="a">=</span> 0;
+
+     <span class="comment">// algorithm step by step
+    // base:sum = 0, n = 123
+
+    // step1: n % 10 = 3, n / 10 = 12
+
+    //sum = 3, n = 12
+
+    // step2: n % 10 = 2, n / 10 = 1
+
+    // sum = 5, n = 1
+
+    // step3: n % 10 = 1, n / 10 = 0
+
+    // sum = 6, n = 0
+
+    // stop:  (n != 0) is false</span>
+
+
+    <span class="a">while</span> (n != 0) {
+
+    <span class="comment">// add last digit to the sum</span>
+
+    sum += n % 10;
+
+    <span class="comment">// cut last digit</span>
+
+     n /= 10;
+      }
+
+    <span class="a">System</span>.out.println(<span class="strings">"Sum of digits: "</span> <span class="a">+</span> sum);
+
+    }
+
+  }
+
+}
+
+</pre>
+</body>
+</html>

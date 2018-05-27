@@ -1,0 +1,39 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">public class</span> PrimeNumbers
+{ 
+  <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	{
+               
+   <span class="comment"> //define limit</span>
+   <span class="b">int</span> limit <span class="a">=</span> 100;
+               
+   <span class="b">System</span>.out.println(<span class="strings">"Prime numbers between 1 and "</span><span class="a"> +</span> limit);
+               
+   <span class="comment">//loop through the numbers one by one</span>
+   <span class="a">for</span>(<span class="b">int</span> i<span class="a">=</span>1; i < 100; i++){
+                       
+    <span class="b">boolean</span> isPrime <span class="a">=</span> true;
+                       
+    <span class="comment">//check to see if the number is prime</span>
+    <span class="a">for</span>(<span class="b">int</span> j<span class="a">=</span>2; j < i ; j++){
+                               
+    <span class="a">if</span>(i % j <span class="a">==</span> 0){
+    isPrime <span class="a">=</span> false;
+     <span class="a">break</span>;
+		}
+     }
+     <span class="comment">// print the number</span>
+     <span class="a">if</span>(isPrime)
+     <span class="b">System</span>.out.print(i + <span class="strings">" "</span>);
+   }
+  }
+}
+
+</pre>
+</body>
+</html>

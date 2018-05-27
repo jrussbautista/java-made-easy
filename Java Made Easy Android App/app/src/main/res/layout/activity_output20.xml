@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="10dp"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_action_java"
+                android:gravity="center_vertical"
+                android:text="MinMax of an Array"
+                android:textColor="@color/pureWhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/p1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="17sp" />
+
+</LinearLayout>

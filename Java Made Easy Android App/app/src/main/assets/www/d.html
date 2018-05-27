@@ -1,0 +1,34 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+ 
+<span class="a">public class</span> LargestOfThreeNumbers
+{
+  <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+   {
+      <span class="b">int</span> x, y, z;
+      <span class="a">System</span>.out.println(<span class="strings">"Enter three integers "</span>);
+     <span class="b">Scanner</span> in = new <span class="b">Scanner(System</span>.in);
+ 
+      x <span class="a">=</span> in.nextInt();
+      y <span class="a">=</span> in.nextInt();
+      z <span class="a">=</span> in.nextInt();
+ 
+      <span class="a">if</span> ( x > y && x > z )
+         <span class="a">System</span>.out.println(<span class="strings">"First number is largest."</span>);
+      <span class="a">else if</span> ( y > x && y > z )
+         <span class="b">System</span>.out.println(<span class="strings">"Second number is largest."</span>);
+      <span class="a">else if</span> ( z > x && z > y )
+       <span class="a">System</span>.out.println(<span class="strings">"Third number is largest."</span>);
+      <span class="a">else</span>   
+         <span class="a">System</span>.out.println(<span class="strings">"Entered numbers are not distinct."</span>);
+   }
+}
+
+</pre>
+</body>
+</html>

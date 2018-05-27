@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<pre>
+<span class="a">class</span> Pattern17
+{
+<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	{
+	 <span class="b">int</span> size <span class="a">=</span> 5;
+	  <span class="comment">/*
+	 change value of 'size' to increase or decrease the size of pyramid
+	  */</span>
+	  <span class="b">int</span> s,i,j;
+	  <span class="b">int<span> space <span class="a">=</span> size;
+	  
+	  <span class="a">for</span> (s <span class="a">=</span> 1;s <= size;s<span class="a">++</span>)
+	  {
+	  
+	    <span class="a">for</span> (i <span class="a">=</span> 1; i <= s; i<span class="a">++</span>)
+		{
+		 <span class="a">System</span>.out.print(<span class="strings">"*"</span>);
+		}
+		
+		<span class="a">for</span> (j <span class="a">=</span> space; j > 1; j<span class="a">--</span>)
+		{
+		 <span class="a">System</span>.out.print(<span class="strings">"  "</span>);
+		}
+		 <span class="a">for</span> (i <span class="a">= </span>; i >= 1; i<span class="a">--</span>)
+		 {
+		  <span class="a">System</span>.out.print(<span class="strings">"*"</span>);
+		 }
+		  <span class="a">System</span>.out.println(<span class="strings">""</span>);
+		  space<span class="a">--</span>;
+		 }
+	}
+}
+</pre>
+</body>
+</html>	

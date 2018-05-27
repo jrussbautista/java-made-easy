@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<pre>
+<span class="a">class</span> Pattern13
+{
+<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	{
+	 <span class="b">int</span> max_stars<span class="a">=</span>7; <span class="comment">//change the value of it to increase or decrease the size of piramid
+	 //take odd no. for odd no. of stars in each row 1-3-5 etc
+	 //take even no. for even no. stars in each row, 2-4-6 etc</span>
+	  <span class="b">int</span> p_space=max_stars/2;
+	  <span class="b">int</span> p_height=max_stars-p_space;
+	   <span class="a">for</span>( <span class="b">int</span> i <span class="a">=</span>p_height;i>=1;i <span class="a">--</span>)
+	  {
+	    <span class="a">for</span>( <span class="b">int</span> j <span class="a">=</span>p_space;j>=i;j <span class="a">--</span>)
+	   {
+	     <span class="b">System</span>.out.print( <span class="strings">" "</span>);
+		}
+		  <span class="b">for</span>( <span class="b">int</span> k <span class="a">=</span>1;k<=max_stars;k <span class="a">++</span>)
+		 {
+		   <span class="b">System</span>.out.print( <span class="strings">"*"</span>);
+		 }
+		 max_stars-=2;
+		  <span class="b">System</span>.out.println();
+		 }
+	}
+}
+</pre>
+</body>
+</html>	

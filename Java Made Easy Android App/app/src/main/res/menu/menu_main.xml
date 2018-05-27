@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.karthnik.kenburnsview.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_day_night_no"
+        android:orderInCategory="100"
+        android:title="@string/action_day_night_no"
+        android:icon="@drawable/ic_day"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_day_night_yes"
+        android:orderInCategory="100"
+        android:title="@string/action_day_night_yes"
+        android:icon="@drawable/ic_moon"
+        app:showAsAction="never" />
+</menu>
+

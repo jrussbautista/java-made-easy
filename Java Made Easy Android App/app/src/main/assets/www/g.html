@@ -1,0 +1,33 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.*;</span>
+ 
+<span class="a">class</span> Palindrome
+{
+  <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+   {
+    <span class="a">String</span> original, reverse <span class="a">=</span><span class="strings"> ""</span>;
+    <span class="b">Scanner</span> in = new <span class="b">Scanner(System</span>.in);
+ 
+    <span class="a">System</span>.out.println(<span class="strings">"Enter a string to check if it is a palindrome"</span>);
+    original <span class="a">=</span> in.nextLine();
+ 
+    <span class="b">int</span> length <span class="a">=</span> original.length();
+ 
+    <span class="a">for</span> ( int i <span class="a">=></span> length - 1; i >= 0; i-- )
+     reverse <span class="a">=</span> reverse <span class="a">+</span> original.charAt(i);
+ 
+    <span class="a">if</span< (original.equals(reverse))
+     <span class="a">System</span>.out.println(<span class="strings">"Entered string is a palindrome."</span>);
+      <span class="a">else</span>
+	<span class="a">System</span>.out.println(<span class="strings">"Entered string is not a palindrome."</span>);
+ 
+   }
+}	
+</pre>
+</body>
+</html>

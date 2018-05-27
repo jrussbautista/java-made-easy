@@ -1,0 +1,34 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> FloydTriangle
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+    <span class="b">int</span> n, num <span class="a">=</span> 1, c, d;
+      <span class="a">Scanner</span> in <span class="a">=</span> new <span class="b">Scanner(System</span>.in);
+ 
+      <span class="a">System</span>.out.println(<span class="strings">"Enter the number of rows of floyd's triangle you want"</span>);
+      n <span class="a">=</span> in.nextInt();
+ 
+      <span class="a">System</span>.out.println(<span class="strings">"Floyd's triangle :-"</span>);
+ 
+     <span class="a">for</span> ( c <span class="a">=</span> 1 ; c <= n ; c<span class="a">++</span> )
+      {
+         <span class="a">for</span> ( d<span class="a">=</span> 1 ; d <= c ; d<span class="a">++</span> )
+         {
+            <span class="a">System</span>.out.print(num<span class="a">+</span><span class="strings">" "</span>);
+            num<span class="a">++</span>;
+         }
+ 
+         <span class="a">System</span>.out.println();
+      }
+   }
+}
+</pre>
+</body>
+</html>

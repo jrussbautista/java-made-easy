@@ -1,0 +1,42 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+ 
+<span class="a">public class</span> Leap_Ex1 {
+ 
+	<span class="b">int</span> year;
+	<span class="b">Scanner</span> scan;
+	
+	<span class="b">void</span> check() {
+		
+	<span class="a">System</span>.out.println(<span class="strings">"Check leap year or not"</span>);
+ 
+	<span class="a">System</span>.out.println(<span class="strings">"\nEnter the year : "</span>);
+	scan <span class="a">=</span>new <span class="b">Scanner(System</span>.in);
+		
+	year <span class="a">=</span> Integer.parseInt(scan.nextLine());
+		
+	<span class="a">if</span>(year%400 <span class="a">==</span> 0 || year%4 <span class="a">==</span> 0) 
+	<span class="a">System</span>.out.println(year <span class="a">+</span> <span class="strings">" is a leap year"</span>);
+
+	<span class="a">else</span> 
+	  <span class="a">System</span>.out.println(year <span class="a">+</span> <span class="strings">" is not a leap year"</span>);
+	}
+}
+ 
+<span class="a">class</span> MainClass {
+	
+	<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	 {
+	Leap_Ex1 obj <span class="a">=</span> new Leap_Ex1();
+		
+	obj.check();
+	}
+}
+</pre>
+</body>
+</html>

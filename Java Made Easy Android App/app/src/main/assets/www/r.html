@@ -1,0 +1,23 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> RandomNumberGenerator
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+	<span class="b">Random</span> rand <span class="a">=</span> new <span class="b">Random</span>(20071969);
+ 
+     <span class="a">for</span> (int j <span class="a">=</span> 0; j<10; j<span class="a">++</span>)
+     {
+       <span class="b">int</span> pick <span class="a">=</span> rand.nextInt(10);
+       <span class="a">System</span>.out.println(pick);
+     }
+   }
+ } 
+</pre>
+</body>
+</html>

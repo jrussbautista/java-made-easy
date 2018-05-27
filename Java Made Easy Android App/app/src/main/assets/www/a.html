@@ -1,0 +1,24 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre><span class="a">import java.util.Scanner;</span>
+ 
+<span class="a">class</span> OddOrEven
+{
+ <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+   {
+      <span class="b">int</span> <span class="variable">x</span>;
+      <span class="b">System</span>.out.println(<span class="strings">"Enter an integer to check if it is odd or even"</span>);
+      <span class="b">Scanner</span> in <span class="a">=</span> <span class="a">new</span> <span class="b">Scanner</span>(<span class="b">System</span>.in);
+      <span class="variable">x</span> <span class="a">=</span> in.nextInt();
+ 
+      <span class="a">if</span> (<span class="variable">x</span> % 2 <span class="a">==</span> 0 )
+          <span class="b">System.</span>out.println(<span class="strings">"You entered an even number."</span>);
+     <span class="a">else</span>
+          <span class="b">System.</span>out.println(<span class="strings">"You entered an odd number."</span>);
+   }
+}</pre>
+</body>
+</html>

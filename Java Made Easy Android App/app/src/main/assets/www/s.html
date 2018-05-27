@@ -1,0 +1,25 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<pre>
+<span class="a">import java.util.Scanner;</span>
+<span class="a">class</span> FahrenheitToCelsius
+{
+   <span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+    {
+	<span class="b">float</span> temperatue;
+    <span class="b">Scanner</span> in <span class="a">=</span> new <span class="b">Scanner(System</span>.in);      
+ 
+    <span class="a">System</span>.out.println(<span class="strings">"Enter temperatue in Fahrenheit"</span>);
+    temperature <span class="a">=</span> in.nextInt();
+ 
+    temperature <span class="a">=</span> ((temperatue - 32)*5)/9;
+ 
+    <span class="a">System</span>.out.println(<span class="strings">"Temperatue in Celsius = "</span> <span class="a">+</span> temperatue);
+  }
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jamesrussel.javamadeeasy">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExercisesActivity">
+            <intent-filter>
+                <action android:name="com.example.jamesrussel.javamadeeasy.ExercisesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideoTutorialsActivity">
+            <intent-filter>
+                <action android:name="com.example.jamesrussel.javamadeeasy.VideoTutorialsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LessonActivity">
+            <intent-filter>
+                <action android:name="com.example.jamesrussel.javamadeeasy.LessonActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProgramActivity">
+            <intent-filter>
+                <action android:name="com.example.jamesrussel.javamadeeasy.ProgramActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyQuizActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.jamesrussel.javamadeeasy.MyQuizActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GlossaryActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.example.jamesrussel.javamadeeasy.GlossaryActivity" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".QuestionActivity">
+            <intent-filter>
+                <action android:name="com.example.jamesrussel.javamadeeasy.QuestionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Exercises1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises3">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises4Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises5Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises6Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises7Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises8Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises9Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercies10Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExercisesActivity" />
+        </activity>
+        <activity android:name=".Exercises11Activity" />
+        <activity android:name=".Exercises12Activity" />
+        <activity android:name=".Exercises13Activity" />
+        <activity android:name=".Exercises15Activity" />
+        <activity android:name=".Exercises14Activity" />
+        <activity android:name=".Video1"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+            </activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".Video3"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video4"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            </activity>
+        <activity android:name=".Video5"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            </activity>
+        <activity android:name=".Video6"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video7"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video8"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video9"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video10"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Lesson1" />
+        <activity android:name=".Lesson2" />
+        <activity android:name=".Lesson3" />
+        <activity android:name=".Lesson4" />
+        <activity android:name=".Lesson5" />
+        <activity android:name=".ExercisesSettings" />
+        <activity android:name=".Lesson6" />
+        <activity android:name=".Help" />
+        <activity android:name=".Program1" />
+        <activity android:name=".Program2" />
+        <activity android:name=".Program3" />
+        <activity android:name=".Program4" />
+        <activity android:name=".Program5" />
+        <activity android:name=".Video11"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video12"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video13"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video14"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video15"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video16"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video17"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video18"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video20"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Video19"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            ></activity>
+        <activity android:name=".Program6" />
+        <activity android:name=".Program7" />
+        <activity android:name=".Program8" />
+        <activity android:name=".Program9" />
+        <activity android:name=".Program10" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".HighscoreActivity" />
+        <activity android:name=".CustomCategoryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jamesrussel.javamadeeasy.MyQuizActivity" />
+        </activity>
+        <activity android:name=".CustomQuestionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jamesrussel.javamadeeasy.MyQuizActivity" />
+        </activity>
+        <activity android:name=".CustomQuestionAddActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jamesrussel.javamadeeasy.MyQuizActivity" />
+        </activity>
+        <activity
+            android:name=".GameModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfilesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowHighScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Program11" />
+        <activity android:name=".Program12" />
+        <activity android:name=".Program13" />
+        <activity android:name=".Program14" />
+        <activity android:name=".Program15" />
+        <activity android:name=".Program16" />
+        <activity android:name=".Program17" />
+        <activity android:name=".Program18" />
+        <activity android:name=".Program19" />
+        <activity android:name=".Program20" />
+        <activity android:name=".Output1" />
+        <activity android:name=".Output2" />
+        <activity android:name=".Output3" />
+        <activity android:name=".Output4" />
+        <activity android:name=".Output5" />
+        <activity android:name=".Output6" />
+        <activity android:name=".Output7" />
+        <activity android:name=".Output8" />
+        <activity android:name=".Output9" />
+        <activity android:name=".Output10" />
+        <activity android:name=".Output11" />
+        <activity android:name=".Output12" />
+        <activity android:name=".Output13" />
+        <activity android:name=".Output14" />
+        <activity android:name=".Output15" />
+        <activity android:name=".Output16" />
+        <activity android:name=".Output17" />
+        <activity android:name=".Output18" />
+        <activity android:name=".Output19" />
+        <activity android:name=".Output20" />
+        <activity android:name=".Pattern1" />
+        <activity android:name=".Pattern2" />
+        <activity android:name=".Pattern3" />
+        <activity android:name=".Pattern4" />
+        <activity android:name=".Pattern5" />
+        <activity android:name=".Pattern6" />
+        <activity android:name=".Pattern7" />
+        <activity android:name=".Pattern8" />
+        <activity android:name=".Pattern9" />
+        <activity android:name=".Pattern10" />
+        <activity android:name=".Pattern11" />
+        <activity android:name=".Pattern12" />
+        <activity android:name=".Pattern13" />
+        <activity android:name=".Pattern14" />
+        <activity android:name=".Pattern15" />
+        <activity android:name=".Pattern16" />
+        <activity android:name=".Pattern17" />
+        <activity android:name=".Pattern18" />
+        <activity android:name=".Pattern19" />
+        <activity android:name=".Pattern20" />
+        <activity android:name=".Lesson7" />
+        <activity android:name=".Lesson8" />
+        <activity android:name=".Lesson9" />
+        <activity android:name=".Lesson10"></activity>
+    </application>
+
+</manifest>

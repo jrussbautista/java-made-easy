@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00796B</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorPrimaryLight">#a7dcd2</color>
+    <color name="colorAccent">#76FF03</color>
+    <color name="colorAccentLight">#303F9F</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textColorSecondary">#E6E6E6</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorAppBackground">#2E2E2E</color>
+    <color name="colorDivider">#ffffff</color>
+    <color name="myColor">#FFFFFF</color>
+    <color name="tabColor">#76FF03</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorPrimaryNight">#00796B</color>
+    <color name="colorPrimaryDarkNight">#004D40</color>
+    <color name="colorAccentNight">#ffffff</color>
+    <color name="myColorWhite">#2E2E2E</color>
+    <color name="pureWhite">#ffffff</color>
+    <color name="myTextColor">#ffffff</color>
+    <color name="listItem1">#212121</color>
+    <color name="listItem2">#00796B</color>
+    <color name="black">#ffffff</color>
+    <color name="colorPink">#ffffff</color>
+    <color name="drawable">#388E3C</color>
+    <color name="blacka">#000000</color>
+    <color name="pureWhite2">#000000</color>
+</resources>

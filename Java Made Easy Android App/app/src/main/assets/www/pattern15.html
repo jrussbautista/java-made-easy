@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<pre>
+<span class="a">class</span> Pattern15
+{
+<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	{
+	 <span class="b">int</span> i,j,k;
+	 <span class="b">int</span> p_height <span class="a">=</span> 5; <span class="comment">// change it to increase or decrease pyramid height
+	 
+	 /*Top pyramid*/</span>
+	 
+	 <span class="a">for</span> (i <span class="a">=</span> 1; i <= p_height; i<span class="a">++</span>)
+	 {
+	  <span class="a">for</span> (k <span class="a">=</span> p_height - 1; k >= i; k<span class="a">--</span>)
+	  {
+	   <span class="a">System</span>.out.print(<span class="strings">" "</span>);
+	  }
+	   <span class="a">for</span> (j <span class="a">=</span> 1; j <= i; j<span class="a">++</span>)
+	   {
+	    <span class="a">System</span>.out.print(<span class="strings">"* "</span>);
+		}
+		<span class="a">System</span>.out.println(<span class="strings">""</span>);
+		}
+		<span class="comment">/*Bottom pyramid*/</span>
+		<span class="a">for</span> (i <span class="a">=</span> p_height - 1; i >= 1; i<span class="a">--</span>)
+		{
+		 <span class="a">for</span> (k <span class="a">=</span> p_height - 1; k >= i; k<span class="a">--</span>)
+		 {
+		  <span class="a">System</span>.out.print(<span class="strings">" "</span>);
+		  }
+		   <span class="a">for</span> (j <span class="a">=</span> i; j >= 1; j<span class="a">--</span>)
+		   {
+		    <span class="a">System</span>.out.print(<span class="strings">"* "</span>);
+			}
+			 <span class="a">System</span>.out.println(<span class="strings">""</span>);
+		 }
+	}
+}
+</pre>
+</body>
+</html>	

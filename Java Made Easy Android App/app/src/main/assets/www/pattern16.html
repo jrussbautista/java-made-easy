@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<pre>
+<span class="a">class</span> Pattern16
+{
+<span class="a">public static</span> <span class="b">void </span> <span class="c">main</span>(<span class="b">String</span> <span class="d">args</span>[])
+	{
+	 <span class="b">int</span> size;
+	 <span class="b">int</span> i;
+	 <span class="b">int</span> j;
+	 <span class="b">int</span> s <span class="a">=</span> 1;
+	 
+	 <span class="comment">//change value of size to increase or decrease the size of pattern</span>
+
+	 <span class="a">for</span> (size <span class="a">= </span>5;size >= 1;size<span class="a">--</span>)
+	 {
+	  <span class="a">for</span> (i <span class="a">=</span> 1; i <= size; i<span class="a">++</span>)
+	  {
+	    <span class="a">System</span>.out.print(<span class="strings">"*"</span>);
+	   }
+	    <span class="a">for</span> (j <span class="a">=</span> s; j > 1; j<span class="a">--</span>)
+		{ 
+		  <span class="a">System</span>.out.print(<span class="strings">"  "</span>);<span class="comment">// 2 spaces</span>
+		 }
+		   <span class="a">for</span> (i <span class="a">=</span> size; i >= 1; i<span class="a">--</span>)
+		   {
+		    <span class="a">System</span>.out.print(<span class="strings">"*"</span>);
+		}
+		    <span class="a">System</span>.out.print(<span class="strings">"\n"</span>);
+			s<span class="a">++</span>;
+		}
+	}
+}
+</pre>
+</body>
+</html>	
